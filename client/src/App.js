@@ -7,6 +7,7 @@ import Contact from './pages/Contact';
 import Detail from './pages/Detail';
 import NoMatch from './pages/NoMatch';
 import Nav from './components/Nav';
+import Footer from './components/Footer';
 import { StoreProvider } from './utils/GlobalState';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route exact path="/products/:id" component={Detail} />
             <Route component={NoMatch} />
           </Switch>
+          <Footer />
         </StoreProvider>
       </div>
     </Router>
