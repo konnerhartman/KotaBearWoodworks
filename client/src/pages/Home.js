@@ -1,15 +1,14 @@
 import React from "react";
-import Jumbotron from "../components/Jumbotron";
+import ProductList from "../components/ProductList";
+import CategoryMenu from "../components/CategoryMenu";
+import Cart from "../components/Cart";
 
 const Home = () => {
   return (
-    <div>
-      <Jumbotron>
-        <h1>Hello</h1>
-        <h1>
-            Test Text
-        </h1>
-      </Jumbotron>
+    <div className="container">
+      <CategoryMenu />
+      <ProductList />
+      <Cart />
     </div>
   );
 };
