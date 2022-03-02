@@ -1,3 +1,15 @@
+footer {
+  background-color: #232F3E;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+/* -------------------------------- */
+
 :root {
   --primary: #232F3E;
   --secondary: #F3A847;
