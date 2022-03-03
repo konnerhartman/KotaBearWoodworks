@@ -1,3 +1,7 @@
+header {
+  background-image: url(./assets/wood-bg.jpg);
+}
+
 footer {
   background-color: #232F3E;
   position: fixed;
