@@ -5,7 +5,7 @@ import Jumbotron from "../components/Jumbotron";
 
 const Home = () => {
   return (
-    <div className="container jumbo">
+    <div className="container ">
       <Jumbotron>
         <button>
           <Link to="/gallery">
