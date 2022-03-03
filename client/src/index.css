@@ -1,4 +1,7 @@
 
+.main-div {
+  margin: -20px;
+}
 
 footer {
   background: var(--primary);
