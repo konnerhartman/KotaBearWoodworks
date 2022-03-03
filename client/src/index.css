@@ -1,9 +1,8 @@
-
-.main-div {
-  margin: -20px;
+.nav-header {
+  font-size: 25rem;
 }
 
-footer {
+/* footer {
   background: var(--primary);
   position: fixed;
   left: 0;
@@ -20,7 +19,7 @@ footer {
 
 /* -------------------------------- */
 
-:root {
+/* :root {
   --primary: #352020;
   --secondary: #876f50;
   --tertiary: #fafafa;
@@ -235,4 +234,4 @@ input:focus {
   .card {
     width: 100%;
   }
-}
+} */
