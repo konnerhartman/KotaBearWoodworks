@@ -11,28 +11,28 @@ html,body
   background-image: url(./assets/jumbo-bg.jpeg);
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 600px;
 }
 
 .about {
   background-image: url(./assets/about-bg.jpeg);
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 600px;
 }
 
 .contact {
   background-image: url(./assets/contact-bg.jpeg);
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 600px;
 }
 
 .login {
   background-image: url(./assets/login-bg.jpeg);
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 600px;
 }
 
 /* footer {
