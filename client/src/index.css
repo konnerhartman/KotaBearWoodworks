@@ -28,6 +28,13 @@ html,body
   height: 500px;
 }
 
+.login {
+  background-image: url(./assets/login-bg.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
 /* footer {
   background: var(--primary);
   position: fixed;
