@@ -5,6 +5,12 @@
   height: 500px;
 }
 
+.about {
+  background-image: url(./assets/about-bg.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
 
 /* footer {
   background: var(--primary);
