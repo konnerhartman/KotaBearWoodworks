@@ -1,6 +1,10 @@
-.nav-header {
-  font-size: 25rem;
+.jumbotron {
+  background-image: url(./assets/jumbo-bg.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
 }
+
 
 /* footer {
   background: var(--primary);
