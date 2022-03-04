@@ -35,7 +35,7 @@ function Login(props) {
         <div className='col-md-3'></div>
         <div className='text-center col-md-6'>
           <h2>Login</h2>
-          <p className=''>Login to your account to view/save your favorite pieces from the gallery.</p>
+          <p className=''>Login to your account to save/view your favorite pieces from the gallery.</p>
           <form className='' onSubmit={handleFormSubmit}>
             <div className="form-group">
               <label htmlFor="email">Email address</label>

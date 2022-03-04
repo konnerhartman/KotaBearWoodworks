@@ -31,55 +31,67 @@ function Signup(props) {
   };
 
   return (
-    <div className="container my-1">
-      <Link to="/login">← Go to Login</Link>
-
-      <h2>Signup</h2>
-      <form onSubmit={handleFormSubmit}>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="firstName">First Name:</label>
-          <input
-            placeholder="First"
-            name="firstName"
-            type="firstName"
-            id="firstName"
-            onChange={handleChange}
-          />
+    <div className="login text-white">
+      <div className='row p-5'>
+        <div className='col-md-3'></div>
+        <div className='text-center col-md-6'>
+          <h2>Signup</h2>
+          <p className=''>Create an account to save/view your favorite pieces from the gallery.</p>
+          <form onSubmit={handleFormSubmit}>
+            <div className="flex-row space-between my-2">
+              <label htmlFor="firstName">First Name</label>
+              <input
+                className="text-center form-control"
+                placeholder="First"
+                name="firstName"
+                type="firstName"
+                id="firstName"
+                onChange={handleChange}
+              />
+            </div>
+            <div className="flex-row space-between my-2">
+              <label htmlFor="lastName">Last Name</label>
+              <input
+                className="text-center form-control"
+                placeholder="Last"
+                name="lastName"
+                type="lastName"
+                id="lastName"
+                onChange={handleChange}
+              />
+            </div>
+            <div className="flex-row space-between my-2">
+              <label htmlFor="email">Email</label>
+              <input
+                className="text-center form-control"
+                placeholder="youremail@test.com"
+                name="email"
+                type="email"
+                id="email"
+                onChange={handleChange}
+              />
+            </div>
+            <div className="flex-row space-between my-2">
+              <label htmlFor="pwd">Password</label>
+              <input
+                className="text-center form-control"
+                placeholder="******"
+                name="password"
+                type="password"
+                id="pwd"
+                onChange={handleChange}
+              />
+            </div>
+            <button className="btn btn-primary m-2" type="submit">Submit</button>
+          </form>
+          <p>
+            Already have an account?
+            <br />
+            <Link className='' to="/login"><b>Go to Login</b></Link>
+          </p>
         </div>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="lastName">Last Name:</label>
-          <input
-            placeholder="Last"
-            name="lastName"
-            type="lastName"
-            id="lastName"
-            onChange={handleChange}
-          />
-        </div>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="email">Email:</label>
-          <input
-            placeholder="youremail@test.com"
-            name="email"
-            type="email"
-            id="email"
-            onChange={handleChange}
-          />
-        </div>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="pwd">Password:</label>
-          <input
-            placeholder="******"
-            name="password"
-            type="password"
-            id="pwd"
-            onChange={handleChange}
-          />
-        </div>
-        <div className="flex-row flex-end">
-          <button type="submit">Submit</button>
-        </div>
-      </form>
+        <div className='col-md-3'></div>
+      </div>
     </div>
   );
 }
