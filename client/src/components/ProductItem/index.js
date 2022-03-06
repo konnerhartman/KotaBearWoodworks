@@ -12,8 +12,6 @@ function ProductItem(item) {
     image,
     name,
     _id,
-    price,
-    quantity
   } = item;
 
   const { cart } = state
@@ -35,19 +33,19 @@ function ProductItem(item) {
   }
 
   return (
-    <div className="card px-1 py-1">
+    <div className="card p-2 m-2">
       <Link to={`/products/${_id}`}>
         <img
+          className="card-img-top"
           alt={name}
           src={`/images/${image}`}
         />
-        <p>{name}</p>
       </Link>
-      <div>
-        <div>{quantity} {pluralize("item", quantity)} in stock</div>
-        <span>${price}</span>
+      <div className="card-body">
+        <h5 className="card-title">{name}</h5>
+        <div className="card-text">Available</div>
       </div>
-      <button onClick={addToCart}>Add to cart</button>
+      <button className="btn btn-primary" onClick={addToCart}>Add to favorites</button>
     </div>
   );
 }

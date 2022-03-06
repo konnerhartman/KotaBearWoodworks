@@ -35,6 +35,16 @@ html,body
   height: 600px;
 }
 
+.card {
+  width: 18rem;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+
 /* footer {
   background: var(--primary);
   position: fixed;
