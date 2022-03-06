@@ -5,7 +5,7 @@ import Cart from "../components/Cart";
 
 const Gallery = () => {
   return (
-    <div className="container gallery">
+    <div className="gallery">
       <CategoryMenu />
       <ProductList />
       <Cart />
