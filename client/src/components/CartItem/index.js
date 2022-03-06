@@ -32,7 +32,7 @@ const CartItem = ({ item }) => {
   }
 
   return (
-    <div className="flex-row">
+    <div className="d-inline-flex">
       <div>
         <img
           src={`/images/${item.image}`}
@@ -40,15 +40,8 @@ const CartItem = ({ item }) => {
         />
       </div>
       <div>
-        <div>{item.name}, ${item.price}</div>
+        <div>{item.name}</div>
         <div>
-          <span>Qty:</span>
-          <input
-            type="number"
-            placeholder="1"
-            value={item.purchaseQuantity}
-            onChange={onChange}
-          />
           <span
             role="img"
             aria-label="trash"
