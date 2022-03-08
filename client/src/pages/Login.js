@@ -60,8 +60,8 @@ function Login(props) {
               />
             </div>
             {error ? (
-              <div>
-                <p className="error-text">The provided credentials are incorrect</p>
+              <div className='rounded m-3 bg-danger font-weight-bold'>
+                <p className="text-white">The provided credentials are incorrect</p>
               </div>
             ) : null}
             <button className="btn btn-primary m-2" type="submit">Submit</button>

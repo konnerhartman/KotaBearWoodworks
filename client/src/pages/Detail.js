@@ -78,21 +78,20 @@ function Detail() {
   return (
     <>
       {currentProduct && cart ? (
-        <div className="container my-1">
-          <Link to="/">← Back to Products</Link>
+        <div className="">
+          <Link to="/gallery">← Back to Products</Link>
 
           <h2>{currentProduct.name}</h2>
 
           <p>{currentProduct.description}</p>
 
           <p>
-            <strong>Price:</strong>${currentProduct.price}{' '}
-            <button onClick={addToCart}>Add to Cart</button>
+            <button onClick={addToCart}>Add to Favorites</button>
             <button
               disabled={!cart.find((p) => p._id === currentProduct._id)}
               onClick={removeFromCart}
             >
-              Remove from Cart
+              Remove from Favorites
             </button>
           </p>
 
