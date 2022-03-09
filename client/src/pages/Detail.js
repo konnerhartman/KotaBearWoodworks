@@ -76,34 +76,42 @@ function Detail() {
   };
 
   return (
-    <>
+    <div className='gallery'>
       {currentProduct && cart ? (
         <div className="">
           <Link to="/gallery">← Back to Products</Link>
+          <div className='text-center'>
+            <h2>{currentProduct.name}</h2>
 
-          <h2>{currentProduct.name}</h2>
+            <p>{currentProduct.description}</p>
 
-          <p>{currentProduct.description}</p>
+            <p>
+              <button 
+              id='add'
+              className='btn btn-primary'
+              onClick={addToCart}
+              >Add to Favorites</button>
+              <button
+                id='remove'
+                className='btn btn-primary'
+                disabled={!cart.find((p) => p._id === currentProduct._id)}
+                onClick={removeFromCart}
+              >
+                Remove from Favorites
+              </button>
+            </p>
 
-          <p>
-            <button onClick={addToCart}>Add to Favorites</button>
-            <button
-              disabled={!cart.find((p) => p._id === currentProduct._id)}
-              onClick={removeFromCart}
-            >
-              Remove from Favorites
-            </button>
-          </p>
-
-          <img
-            src={`/images/${currentProduct.image}`}
-            alt={currentProduct.name}
-          />
+            <img
+              className='rounded mb-3'
+              src={`/images/${currentProduct.image}`}
+              alt={currentProduct.name}
+            />
+          </div>
         </div>
       ) : null}
       {loading ? <img src={spinner} alt="loading" /> : null}
       <Cart />
-    </>
+    </div>
   );
 }
 
