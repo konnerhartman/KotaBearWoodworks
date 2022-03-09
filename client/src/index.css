@@ -47,6 +47,12 @@ html,body
   width: 18rem;
 }
 
+.likeBtn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+}
+
 @media screen and (max-width: 768px) {
   .card {
     width: 100%;
