@@ -12,6 +12,10 @@ import {
 import { QUERY_PRODUCTS } from '../utils/queries';
 import { idbPromise } from '../utils/helpers';
 import spinner from '../assets/spinner.gif';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-regular-svg-icons';
+import { faHeart as solidFaHeart, faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons';
+
 
 function Detail() {
   const [state, dispatch] = useStoreContext();
@@ -79,27 +83,28 @@ function Detail() {
     <div className='gallery'>
       {currentProduct && cart ? (
         <div>
-          <Link to="/gallery">← Back to Products</Link>
+          <Link to="/gallery" className='backBtn p-2 text-dark'>
+            <FontAwesomeIcon icon={faAngleDoubleLeft} /> Back to Products</Link>
           <div className='text-center'>
             <div className=''>
               <h2>{currentProduct.name}</h2>
-              <p className='likeBtn'> Add to Favorites:
+              <p className='likeBtn'>
                 <button 
                 hidden={cart.find((p) => p._id === currentProduct._id)}
                 onClick={addToCart}
                 >
-                  🤍
+                  <FontAwesomeIcon icon={faHeart} />
                 </button>
                 <button
                   hidden={!cart.find((p) => p._id === currentProduct._id)}
                   onClick={removeFromCart}
                 >
-                  ❤️
+                  <FontAwesomeIcon icon={solidFaHeart} />
                 </button>
               </p>
             </div>
             <img
-              className='rounded'
+              className='rounded shadow-lg'
               src={`/images/${currentProduct.image}`}
               alt={currentProduct.name}
             />

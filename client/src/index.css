@@ -47,8 +47,15 @@ html,body
   width: 18rem;
 }
 
+.backBtn {
+  text-decoration: none;
+  font-weight: bold;
+  /* color: black; */
+  font-size: 1.2rem;
+}
+
 .likeBtn {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .likeBtn button {
