@@ -20,7 +20,6 @@
   top: .5rem;
   right: .5rem;
   cursor: pointer;
-  color: var(--tertiary);
 }
 
 .cart .close:hover {
@@ -29,15 +28,13 @@
 
 .cart-closed {
   position: fixed;
-  bottom: 5%;
-  right: 3%;
+  bottom: 5.5%;
+  right: 3.3%;
   font-size: 2rem;
   cursor: pointer;
   background-color: #363d44;
-  border-radius: 50%;
+  border-radius: 10%;
   padding: .25rem;
-  width: 50px;
-  height: 50px;
 }
 
 .cart-closed span {

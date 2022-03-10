@@ -25,9 +25,9 @@ const Cart = () => {
 
   if (!state.cartOpen) {
     return (
-      <div className="cart-closed" onClick={toggleCart}>
+      <div className="cart-closed text-white text-center" onClick={toggleCart}>
         <span role="img" aria-label="trash">
-        🤍
+        🤍's
         </span>
       </div>
     );
