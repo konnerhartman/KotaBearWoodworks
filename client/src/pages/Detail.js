@@ -83,16 +83,14 @@ function Detail() {
           <div className='text-center'>
             <div className=''>
               <h2>{currentProduct.name}</h2>
-              <p>
+              <p className='likeBtn'> Add to Favorites:
                 <button 
-                className='likeBtn'
                 hidden={cart.find((p) => p._id === currentProduct._id)}
                 onClick={addToCart}
                 >
                   🤍
                 </button>
                 <button
-                  className='likeBtn'
                   hidden={!cart.find((p) => p._id === currentProduct._id)}
                   onClick={removeFromCart}
                 >
