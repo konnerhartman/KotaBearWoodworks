@@ -27,13 +27,13 @@ const Contact = () => {
               <div className="row mb-3">
                 <div className="col-md-6">
                   <div className="md-form mb-0">
-                    <input type="text" id="name" name="name" className="form-control" />
+                    <input type="text" id="name" name="name" className="form-control" required />
                     <label className="">Your name</label>
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className="md-form mb-0">
-                    <input type="text" id="email" name="email" className="form-control" />
+                    <input type="text" id="email" name="email" className="form-control" required />
                     <label className="">Your email</label>
                   </div>
                 </div>
@@ -41,7 +41,7 @@ const Contact = () => {
               <div className="row  mb-3">
                 <div className="col-md-12">
                   <div className="md-form mb-0">
-                    <input type="text" id="subject" name="subject" className="form-control" />
+                    <input type="text" id="subject" name="subject" className="form-control" required />
                     <label className="">Subject</label>
                   </div>
                 </div>
@@ -49,12 +49,12 @@ const Contact = () => {
               <div className="row">
                 <div className="col-md-12">
                   <div className="md-form">
-                    <textarea type="text" id="message" name="message" rows="2" className="form-control md-textarea"></textarea>
+                    <textarea type="text" id="message" name="message" rows="2" className="form-control md-textarea" required></textarea>
                     <label>Your message</label>
                   </div>
                 </div>
-                <div>
-                  <input type="submit" value="send" />
+                <div className='text-end'>
+                  <input className='btn btn-primary px-4' type="submit" value="Send" />
                 </div>
               </div>
             </form>
