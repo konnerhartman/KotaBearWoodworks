@@ -43,6 +43,17 @@ html,body
   background-attachment: fixed;
 }
 
+.noMatch {
+  background-image: url(./assets/404-bg.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
+
+.noMatch button {
+  margin-top: 12%;
+}
+
 .card {
   width: 18rem;
 }
@@ -61,6 +72,20 @@ html,body
 .likeBtn button {
   background: none;
   border: none;
+}
+
+.spinner {
+  animation: spin infinite 2s linear;
+  font-size: 3rem;
+}
+
+@keyframes spin {
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
 }
 
 @media screen and (max-width: 768px) {

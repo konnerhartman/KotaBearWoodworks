@@ -32,7 +32,7 @@ function ProductItem(item) {
   }
 
   return (
-    <div className="card p-2 m-2 d-inline-flex">
+    <div className="card p-2 m-2 d-inline-flex shadow">
       <Link to={`/products/${_id}`}>
         <img
           className="card-img-top"

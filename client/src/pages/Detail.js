@@ -11,10 +11,9 @@ import {
 } from '../utils/actions';
 import { QUERY_PRODUCTS } from '../utils/queries';
 import { idbPromise } from '../utils/helpers';
-import spinner from '../assets/spinner.gif';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
-import { faHeart as solidFaHeart, faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons';
+import { faHeart as solidFaHeart, faAngleDoubleLeft, faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 
 
 function Detail() {
@@ -108,12 +107,11 @@ function Detail() {
               src={`/images/${currentProduct.image}`}
               alt={currentProduct.name}
             />
-
             <p className='m-0 p-4'>{currentProduct.description}</p>
           </div>
         </div>
       ) : null}
-      {loading ? <img src={spinner} alt="loading" /> : null}
+      {loading ? <FontAwesomeIcon className='spinner' icon={faScrewdriverWrench} /> : null}
       <Cart />
     </div>
   );
