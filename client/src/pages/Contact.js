@@ -9,7 +9,7 @@ const About = () => {
             <h2 class="h1-responsive font-weight-bold text-center my-4">Reach Out</h2>
             <p class="text-center w-responsive mx-auto">Do you have any questions about pricing? Want to discuss custom pieces? Please do not hesitate to contact me directly.</p>
             <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-              <div class="row">
+              <div class="row mb-3">
                 <div class="col-md-6">
                   <div class="md-form mb-0">
                     <input type="text" id="name" name="name" class="form-control" />
@@ -23,7 +23,7 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              <div class="row">
+              <div class="row  mb-3">
                 <div class="col-md-12">
                   <div class="md-form mb-0">
                     <input type="text" id="subject" name="subject" class="form-control" />
