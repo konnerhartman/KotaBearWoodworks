@@ -1,5 +1,7 @@
 import React from 'react';
 import emailjs from '@emailjs/browser';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
 const Contact = () => {
 
@@ -54,7 +56,9 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className='text-end'>
-                  <input className='btn btn-primary px-4' type="submit" value="Send" />
+                  <button className='btn btn-secondary px-4' type="submit">
+                    Send <FontAwesomeIcon icon={faPaperPlane} />
+                  </button>
                 </div>
               </div>
             </form>
