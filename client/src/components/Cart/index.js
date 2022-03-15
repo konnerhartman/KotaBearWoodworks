@@ -4,6 +4,9 @@ import CartItem from '../CartItem';
 import { useStoreContext } from '../../utils/GlobalState';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
 import './style.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXmarkCircle, faHeart } from '@fortawesome/free-solid-svg-icons'
+
 
 const Cart = () => {
   const [state, dispatch] = useStoreContext();
@@ -25,19 +28,23 @@ const Cart = () => {
 
   if (!state.cartOpen) {
     return (
-      <div className="cart-closed text-white text-center" onClick={toggleCart}>
-        <span role="img" aria-label="trash">
-        🤍's
-        </span>
+      <div className="cart-closed text-center" onClick={toggleCart}>
+        <FontAwesomeIcon 
+          aria-label="trash"
+          icon={faHeart}
+          className='text-white p-2 pb-0'
+        />
       </div>
     );
   }
 
   return (
     <div className="cart bg-light">
-      <div className="close" onClick={toggleCart}>
-        [close]
-      </div>
+      <FontAwesomeIcon 
+        className="close" 
+        onClick={toggleCart} 
+        icon={faXmarkCircle} 
+      />
       <h2 className='px-2 text-center pb-3'>Liked items</h2>
       {state.cart.length ? (
         <div>
@@ -46,7 +53,7 @@ const Cart = () => {
           ))}
         </div>
       ) : (
-        <h3>
+        <h3 className='text-center'>
           You haven't liked anything yet!
         </h3>
       )}

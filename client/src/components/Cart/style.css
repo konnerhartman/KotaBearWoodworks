@@ -1,14 +1,14 @@
 .cart {
   position: fixed;
-  top: 0;
+  bottom: 0;
   right: 0;
   min-width: 30%;
   max-width: 30%;
-  max-height: 60%;
+  max-height: 80%;
   overflow: auto;
   padding: .5rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
-  border-bottom-left-radius: .5rem;
+  border-top-left-radius: .5rem;
 }
 
 .cart span {
@@ -17,13 +17,9 @@
 
 .cart .close {
   position: absolute;
-  top: .5rem;
-  right: .5rem;
+  top: .8rem;
+  right: .8rem;
   cursor: pointer;
-}
-
-.cart .close:hover {
-  text-decoration: underline;
 }
 
 .cart-closed {
@@ -34,7 +30,7 @@
   cursor: pointer;
   background-color: #363d44;
   border-radius: 10%;
-  padding: .25rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
 }
 
 .cart-closed span {
@@ -42,7 +38,7 @@
 }
 
 .cart-closed:hover {
-  transform: rotate(8deg);
+  transform: scale();
 }
 
 .cart img {

@@ -2,6 +2,9 @@ import React from 'react';
 import { useStoreContext } from "../../utils/GlobalState";
 import { REMOVE_FROM_CART } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrashCan } from '@fortawesome/free-solid-svg-icons'
+
 
 const CartItem = ({ item }) => {
 
@@ -27,13 +30,11 @@ const CartItem = ({ item }) => {
       <div>
         <div>{item.name}</div>
         <div>
-          <span
-            role="img"
+          <FontAwesomeIcon 
             aria-label="trash"
             onClick={() => removeFromCart(item)}
-          >
-            🗑️
-          </span>
+            icon={faTrashCan} 
+          />
         </div>
       </div>
     </div>
