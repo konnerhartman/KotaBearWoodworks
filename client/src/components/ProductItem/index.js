@@ -33,18 +33,22 @@ function ProductItem(item) {
 
   return (
     <div className="card p-2 m-2 d-inline-flex shadow">
-      <Link to={`/products/${_id}`}>
-        <img
-          className="card-img-top"
-          alt={name}
-          src={`/images/${image}`}
-        />
-      </Link>
-      <div className="card-body">
-        <h5 className="card-title">{name}</h5>
-        <div className="card-text">Available</div>
+      <div>
+        <Link to={`/products/${_id}`}>
+          <img
+            className="card-img-top"
+            alt={name}
+            src={`/images/${image}`}
+          />
+        <div className="card-body text-dark ">
+          <h5 className="card-title">{name}</h5>
+          <div className="card-text">Available</div>
+        </div>
+        </Link>
+        <div>
+          <button className="btn btn-primary" onClick={addToCart}>Add to favorites</button>
+        </div>
       </div>
-      <button className="btn btn-primary" onClick={addToCart}>Add to favorites</button>
     </div>
   );
 }
