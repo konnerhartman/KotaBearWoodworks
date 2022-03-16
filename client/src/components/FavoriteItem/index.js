@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import { useStoreContext } from "../../utils/GlobalState";
 import { REMOVE_FROM_CART } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
@@ -20,21 +21,26 @@ const FavoriteItem = ({ item }) => {
   };
 
   return (
-    <div className="d-inline-flex text-center">
-      
-     
-        <h3>{item.name}</h3>
+    <div className="card d-inline-flex">
+      <Link to={`/products/${item._id}`}>
+        <img
+          className='card-img-top'
+          src={`/images/${item.image}`}
+          alt=""
+        />
+      </Link>
+      <div className="card-body row">
+        <Link className='col-10 text-dark text-decoration-none' to={`/products/${item._id}`}>
+          <h5 className="card-title">{item.name}</h5>
+        </Link>
         <FontAwesomeIcon 
-          className=''
+          className='col-1 p-1'
           aria-label="trash"
           onClick={() => removeFromCart(item)}
           icon={faTrashCan} 
         />
-        <img
-          src={`/images/${item.image}`}
-          alt=""
-        />
       </div>
+    </div>
   );
 }
 
