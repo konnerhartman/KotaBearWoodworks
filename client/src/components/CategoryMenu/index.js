@@ -43,7 +43,7 @@ function CategoryMenu() {
 
   return (
     <div className='text-center'>
-      <h2>Categories</h2>
+      <h2 className='p-1'>Categories:</h2>
       {categories.map((item) => (
         <button
           className="btn btn-secondary mx-2"

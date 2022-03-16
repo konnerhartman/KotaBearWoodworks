@@ -1,11 +1,8 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { idbPromise } from '../utils/helpers';
 import FavoriteItem from '../components/FavoriteItem';
 import { useStoreContext } from '../utils/GlobalState';
 import { ADD_MULTIPLE_TO_CART } from '../utils/actions';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Favorites = () => {
   const [state, dispatch] = useStoreContext();
@@ -22,11 +19,8 @@ const Favorites = () => {
   }, [state.cart.length, dispatch]);
 
   return (
-    <div className="bg-light">
-      <Link to="/gallery" className='backBtn p-2 text-dark'>
-        <FontAwesomeIcon icon={faAngleDoubleLeft} /> Back to Products
-      </Link>
-      <h2 className='px-2 text-center pb-3'>Favorites</h2>
+    <div className="bg-light text-center gallery">
+      <h2 className='p-3'>Favorites</h2>
       {state.cart.length ? (
         <div>
           {state.cart.map((item) => (

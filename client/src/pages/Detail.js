@@ -83,10 +83,10 @@ function Detail() {
       {currentProduct && cart ? (
         <div>
           <Link to="/gallery" className='backBtn p-2 text-dark'>
-            <FontAwesomeIcon icon={faAngleDoubleLeft} /> Back to Products
+            <FontAwesomeIcon icon={faAngleDoubleLeft} /> Back to Gallery
           </Link>
           <div className='text-center'>
-            <div className=''>
+            <div>
               <h2>{currentProduct.name}</h2>
               <p className='likeBtn'>
                 <button 

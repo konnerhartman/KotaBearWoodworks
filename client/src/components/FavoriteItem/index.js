@@ -21,7 +21,7 @@ const FavoriteItem = ({ item }) => {
   };
 
   return (
-    <div className="card d-inline-flex">
+    <div className="card d-inline-flex m-2 p-2 shadow">
       <Link to={`/products/${item._id}`}>
         <img
           className='card-img-top'
