@@ -12,6 +12,7 @@ const typeDefs = gql`
     description: String
     image: String
     category: Category
+    Availability: String
   }
 
   type Order {
