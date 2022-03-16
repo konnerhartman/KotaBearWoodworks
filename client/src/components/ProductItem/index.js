@@ -34,7 +34,7 @@ function ProductItem(item) {
   return (
     <div className="card p-2 m-2 d-inline-flex shadow">
       <div>
-        <Link to={`/products/${_id}`}>
+        <Link to={`/products/${_id}`} className='text-decoration-none'>
           <img
             className="card-img-top"
             alt={name}
