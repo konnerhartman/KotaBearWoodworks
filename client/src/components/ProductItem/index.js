@@ -43,7 +43,7 @@ function ProductItem(item) {
           />
         <div className="card-body text-dark ">
           <h5 className="card-title">{name}</h5>
-          <div className="card-text">Available: {availability}</div>
+          <p className="card-text">Available: {availability}</p>
         </div>
         </Link>
         <div>

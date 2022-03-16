@@ -56,6 +56,7 @@ function ProductList() {
               _id={product._id}
               image={product.image}
               name={product.name}
+              availability={product.availability}
             />
           ))}
         </div>
