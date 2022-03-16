@@ -11,6 +11,7 @@ function ProductItem(item) {
     image,
     name,
     _id,
+    availability,
   } = item;
 
   const { cart } = state
@@ -42,7 +43,7 @@ function ProductItem(item) {
           />
         <div className="card-body text-dark ">
           <h5 className="card-title">{name}</h5>
-          <div className="card-text">Available</div>
+          <div className="card-text">Available: {availability}</div>
         </div>
         </Link>
         <div>

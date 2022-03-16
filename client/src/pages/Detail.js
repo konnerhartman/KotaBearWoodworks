@@ -108,7 +108,8 @@ function Detail() {
               src={`/images/${currentProduct.image}`}
               alt={currentProduct.name}
             />
-            <p className='m-0 p-4'>{currentProduct.description}</p>
+            <p className='m-0'>{currentProduct.description}</p>
+            <p className='m-0 pb-4'>Available: {currentProduct.availability}</p>
           </div>
         </div>
       ) : null}

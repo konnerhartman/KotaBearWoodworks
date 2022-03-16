@@ -11,8 +11,8 @@ const typeDefs = gql`
     name: String
     description: String
     image: String
+    availability: String
     category: Category
-    Availability: String
   }
 
   type Order {
