@@ -61,7 +61,7 @@ function ProductList() {
           ))}
         </div>
       ) : (
-        <h3>You haven't added any products yet!</h3>
+        <h3>I haven't added any products yet!</h3>
       )}
       {loading ? <FontAwesomeIcon className='spinner' icon={faScrewdriverWrench} /> : null}
     </div>
