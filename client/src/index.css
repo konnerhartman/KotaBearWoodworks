@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;400&family=Cantarell&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@800&display=swap');
 
 html,body
 {
@@ -14,7 +15,8 @@ html,body
 nav {
   /* font-family: 'Atkinson Hyperlegible', sans-serif; */
   /* font-family: 'Alegreya Sans SC', sans-serif; */
-  font-family: 'Cantarell', sans-serif;
+  /* font-family: 'Cantarell', sans-serif; */
+  font-family: 'Big Shoulders Text', cursive;
 }
 
 .jumbotron {
