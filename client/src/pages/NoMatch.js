@@ -4,11 +4,16 @@ import { Link } from "react-router-dom";
 const NoMatch = () => {
   return (
     <div className="noMatch text-center">
-      <Link to="/">
-        <button className="btn btn-dark">
-          Go To Home
-        </button>
-      </Link>
+      <div className="noMatch-bg">
+        <div className="p-5">
+        <h2 className="not-found">404: PAGE NOT FOUND</h2>
+          <Link to="/">
+            <button className="btn btn-dark m-2">
+              Go To Home
+            </button>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };
