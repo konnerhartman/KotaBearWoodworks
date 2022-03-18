@@ -12,6 +12,14 @@ html,body
   /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 
+h2 {
+  font-family: 'Big Shoulders Text', cursive;
+}
+
+p {
+  font-family: 'Cantarell', sans-serif;
+}
+
 nav {
   /* font-family: 'Atkinson Hyperlegible', sans-serif; */
   /* font-family: 'Alegreya Sans SC', sans-serif; */
@@ -24,6 +32,18 @@ nav {
   background-size: cover;
   background-position: center;
   height: 625px;
+}
+
+.home-intro {
+  text-shadow: 3px 3px 4px #ffffff;
+}
+
+.home-logo {
+  height: 18rem;
+}
+
+.home-logo:hover {
+  animation: spin infinite .5s linear reverse;
 }
 
 .about {
@@ -60,7 +80,6 @@ nav {
   background-size: cover;
   background-position: center;
   height: 625px;
-
 }
 
 .noMatch-bg {
@@ -97,8 +116,9 @@ nav {
   animation: spin infinite 2s linear;
   font-size: 3rem;
 }
+
 .likes {
-  height: 30rem;
+  height: 625px;
 }
 
 @keyframes spin {
@@ -112,7 +132,7 @@ to {
 
 @media screen and (max-width: 768px) {
   .card {
-    width: 100%;
+    width: 95%;
   }
 }
 
