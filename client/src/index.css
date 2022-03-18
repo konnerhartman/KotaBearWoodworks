@@ -35,7 +35,8 @@ nav {
 }
 
 .home-intro {
-  text-shadow: 3px 3px 4px #ffffff;
+  color: black;
+  text-shadow: -1px -1px  white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
 }
 
 .home-logo {
