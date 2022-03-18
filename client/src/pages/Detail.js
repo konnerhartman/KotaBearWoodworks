@@ -104,6 +104,7 @@ function Detail() {
               </p>
             </div>
             <img
+              height='510rem'
               className='rounded shadow-lg'
               src={`/images/${currentProduct.image}`}
               alt={currentProduct.name}
