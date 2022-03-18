@@ -17,69 +17,173 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'Tin of Cookies',
+      name: 'A Frame Wine Rack',
       description:
-        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-      image: 'cookie-tin.jpg',
-      availability: 'Yes',
-      category: categories[0]._id,
-    },
-    {
-      name: 'Canned Coffee',
-      description:
-        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
-      image: 'canned-coffee.jpg',
-      availability: 'Yes',
-      category: categories[0]._id,
-    },
-    {
-      name: 'Toilet Paper',
-      category: categories[1]._id,
-      description:
-        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
-      image: 'toilet-paper.jpg',
-      availability: 'Yes',
-    },
-    {
-      name: 'Handmade Soap',
-      category: categories[1]._id,
-      description:
-        'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
-      image: 'soap.jpg',
-      availability: 'Yes',
-    },
-    {
-      name: 'Set of Wooden Spoons',
-      category: categories[1]._id,
-      description:
-        'Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.',
-      image: 'wooden-spoons.jpg',
+        'This one of a kind wine rack holds up to 6 bottles of wine.',
+      image: 'a-frame-wine.jpg',
       availability: 'No',
+      category: categories[3]._id,
     },
     {
-      name: 'Camera',
-      category: categories[2]._id,
+      name: '"Blessed" Cross #1',
       description:
-        'Vestibulum risus metus, luctus non tortor quis, tincidunt consectetur ex. Nullam vitae lobortis ligula, ut sagittis massa. Curabitur consectetur, tellus at pulvinar venenatis, erat augue cursus erat, eu ullamcorper eros lectus ultrices ipsum. Integer rutrum, augue vitae auctor venenatis, turpis turpis elementum orci, at sagittis risus mi a leo.',
-      image: 'camera.jpg',
+        'A metal cross attached to a wooden cross backing',
+      image: 'blessed-1.jpg',
       availability: 'Yes',
+      category: categories[3]._id,
     },
     {
-      name: 'Tablet',
-      category: categories[2]._id,
-      description:
-        'In sodales, ipsum quis ultricies porttitor, tellus urna aliquam arcu, eget venenatis purus ligula ut nisi. Fusce ut felis dolor. Mauris justo ante, aliquet non tempus in, tempus ac lorem. Aliquam lacinia dolor eu sem eleifend ultrices. Etiam mattis metus metus. Sed ligula dui, placerat non turpis vitae, suscipit volutpat elit. Phasellus sagittis, diam elementum suscipit fringilla, libero mauris scelerisque ex, ac interdum diam erat non sapien.',
-      image: 'tablet.jpg',
-      availability: 'Yes',
-    },
-    {
-      name: 'Tales at Bedtime',
+      name: '"Blessed/Faith" Cross',
       category: categories[3]._id,
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare diam quis eleifend rutrum. Aliquam nulla est, volutpat non enim nec, pharetra gravida augue. Donec vitae dictum neque. Pellentesque arcu lorem, fringilla non ligula ac, tristique bibendum erat. Ut a semper nibh. Quisque a mi et mi tempor ultricies. Maecenas eu ipsum eu enim hendrerit accumsan at euismod urna.',
-      image: 'bedtime-book.jpg',
+        'A metal cross attached to a framed wooden board',
+      image: 'blessed-faith.jpg',
+      availability: 'Yes',
+    },
+    {
+      name: 'Bottle Cap Frame',
+      category: categories[2]._id,
+      description:
+        'This shadow box has an opening at the top to allow for continued additions',
+      image: 'bottle-top-frame.jpg',
+      availability: 'Yes',
+    },
+    {
+      name: 'Coffee Table with Burnt Effect',
+      category: categories[0]._id,
+      description:
+        'This coffee table has steel legs and the top is made of 2x4s. The burnt effect was applied with actual fire.',
+      image: 'burnt-coffee-table.jpg',
       availability: 'No',
     },
+    {
+      name: 'End Table with Burnt Effect',
+      category: categories[0]._id,
+      description:
+        'This end table has steel legs. The burnt effect was applied with actual fire.',
+      image: 'burnt-end-table.jpg',
+      availability: 'No',
+    },
+    {
+      name: 'C Clamp Coat Rack',
+      category: categories[3]._id,
+      description:
+        'This coat rack was made from real C clamps.',
+      image: 'c-clamp-rack.jpg',
+      availability: 'No',
+    },
+    {
+      name: 'Dallas Stars Wall Art',
+      category: categories[2]._id,
+      description:
+        'This wooden wall art was made out of scraps. Each of the pieces were stained and painted with various shades/colors. Multiple types of wood were used as well.',
+      image: 'dallas-stars.jpg',
+      availability: 'No',
+    },
+    {
+      name: '"Faith" Cross #1',
+      category: categories[3]._id,
+      description:
+        'A metal cross attached to a framed wooden board',
+      image: 'faith-1.jpg',
+      availability: 'Yes',
+    },
+    {
+      name: '"Grace" Cross #1',
+      category: categories[3]._id,
+      description:
+        'A metal cross attached to a framed wooden board',
+      image: 'grace-1.jpg',
+      availability: 'Yes',
+    },
+    {
+      name: 'Helmet Rack with Burnt Effect',
+      category: categories[3]._id,
+      description:
+        'This hemlet rack uses steel piping to hang a helmet and large nails to hang coats, gloves, etc.',
+      image: 'helmet-rack.jpg',
+      availability: 'No',
+    },
+    {
+      name: 'Mason Jar Light Fixture',
+      category: categories[1]._id,
+      description:
+        'This light fixture uses refurbished materials, including the wood, metal paneling, and mason jars.',
+      image: 'mason-jar-light.jpg',
+      availability: 'No',
+    },
+    {
+      name: 'Whiskey Dispensers',
+      category: categories[3]._id,
+      description:
+        'These whiskey dispensers are made of refurbished glass milk jugs.',
+      image: 'milk-jugs.jpg',
+      availability: 'No',
+    },
+    {
+      name: 'Mountainscape/Headboard',
+      category: categories[2]._id,
+      description:
+        'This wooden mountainscape shows a beautiful day/night image. It was built with recycled wood scraps. The headboard is also custom.',
+      image: 'mountain-headboard.jpg',
+      availability: 'No',
+    },
+    {
+      name: 'Stove Top Cover',
+      category: categories[3]._id,
+      description:
+        'This hard wood stove top cover acts as a great cutting board or a simple way to hide your stove burners.',
+      image: 'oven-topper.jpg',
+      availability: 'No',
+    },
+    {
+      name: 'Western Star Shelf',
+      category: categories[3]._id,
+      description:
+        'This western styled shelf features recycled wood with a live edge. The wooden designs were all cut by hand and the center star is metal.',
+      image: 'star-shelf.jpg',
+      availability: 'Yes',
+    },
+    {
+      name: 'Texas Flag (Rectangle)',
+      category: categories[2]._id,
+      description:
+        'This flag was made from recycled wood',
+      image: 'texas-flag-1.jpg',
+      availability: 'No',
+    },
+    {
+      name: 'Texas Flag (Round)',
+      category: categories[2]._id,
+      description:
+        'This flag was made from wood and is incased in a recycle metal barrel ring.',
+      image: 'texas-flag-2.jpg',
+      availability: 'Yes',
+    },
+    {
+      name: '"Welcome" Sign',
+      category: categories[2]._id,
+      description:
+        'This simple welcome sign features a metal "Welcome" attached to a wooden background',
+      image: 'welcome.jpg',
+      availability: 'Yes',
+    },
+    {
+      name: 'Recycled Window with Two Shelves',
+      category: categories[2]._id,
+      description:
+        'This recycled window features two shelves made of old house siding',
+      image: 'window-shelf-2.jpg',
+      availability: 'No',
+    },
+    {
+      name: 'Recycled Window with a Shelf',
+      category: categories[2]._id,
+      description:
+        'This recycled window features a single shelf',
+      image: 'window-shelf-1.jpg',
+      availability: 'Yes',
+    }
   ]);
 
   console.log('products seeded');
