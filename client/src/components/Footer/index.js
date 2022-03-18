@@ -1,16 +1,21 @@
 import React from "react";
+import KHLogo from "../../assets/KH-LOGO.png"
 
 function Footer() {
 return (
   <div>
     <footer className="text-white sticky-bottom bg-dark">
-      <div className="row px-2 pt-3">
-        <p className="col-6 text-start p-2">© 2022 Copyright</p>
-        <p className="col-6 text-end p-2">Website built by:
-          <a className="text-decoration-none" href="https://github.com/konnerhartman">Konner Hartman</a>
+      <div className="row px-2 pt-3 row text-center">
+        <p className="col-lg-4 col-sm-12 p-2">© 2022 Copyright</p>
+        <div className="col-lg-2 d-none d-sm-block"></div>
+        <div className="col-lg-2 d-none d-sm-block"></div>
+        <p className="col-lg-4 col-sm-12 p-2">Website built by:
+          <a className="text-decoration-none p-2" href="https://github.com/konnerhartman">
+            <img height="18rem" src={KHLogo} alt="Konner Hartman Logo" />
+          </a>
         </p>
       </div>
-      <div className="text-end">
+      <div className="">
         
       </div>
     </footer>

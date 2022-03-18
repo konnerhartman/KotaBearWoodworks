@@ -17,7 +17,8 @@ h2 {
 }
 
 p {
-  font-family: 'Cantarell', sans-serif;
+  /* font-family: 'Atkinson Hyperlegible', sans-serif; */
+  font-weight: bold;
 }
 
 nav {
@@ -30,13 +31,12 @@ nav {
 .jumbotron {
   background-image: url(./assets/jumbo-bg.jpeg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   height: 625px;
 }
 
-.home-intro {
-  color: black;
-  text-shadow: -1px -1px  white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+.intro {
+  font-size: larger;
 }
 
 .home-logo {
