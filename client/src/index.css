@@ -83,8 +83,12 @@ span {
   font-size: 3rem;
 }
 
-.card {
+.item-card {
   width: 18rem;
+}
+
+.detail-card {
+background-color: white;
 }
 
 .backBtn {

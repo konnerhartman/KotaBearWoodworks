@@ -105,14 +105,20 @@ function Detail() {
                 </button>
               </p>
             </div>
-            <img
-              height='510rem'
-              className='rounded shadow-lg'
-              src={`/images/${currentProduct.image}`}
-              alt={currentProduct.name}
-            />
-            <p className='m-0'>{currentProduct.description}</p>
-            <p className='m-0 pb-4'>Available: <span>{currentProduct.availability}</span></p>
+            <div className='row'>
+              <div className='col-lg-6 col-sm-12 p-2'>
+                <img
+                  height='510rem'
+                  className='rounded shadow-lg'
+                  src={`/images/${currentProduct.image}`}
+                  alt={currentProduct.name}
+                />
+              </div>
+              <div className='col-lg-6 col-sm-12'>
+                <p className='m-0 pb-4'>Available: <span>{currentProduct.availability}</span></p>
+                <p className='m-0'>Details: {currentProduct.description}</p>
+              </div>
+            </div>
           </div>
         </div>
       ) : null}
