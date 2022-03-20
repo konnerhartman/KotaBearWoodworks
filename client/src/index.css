@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka:wght@300;400;500&family=Saira+Condensed:wght@400;700&display=swap');
 
-/* font-family: 'Bebas Neue', cursive;
-font-family: 'Fredoka', sans-serif;
-font-family: 'Saira Condensed', sans-serif; */
-
 html,body
 {
   width: 100%;
@@ -13,18 +9,9 @@ html,body
   overflow-x: hidden; 
 }
 
- /* {
-  font-family: 'Bebas Neue', cursive;
-} */
-
-
 h1, h2, h3, h5, p, nav, form, .btn {
   font-family: 'Saira Condensed', sans-serif;
 }
-
-/* h1 {
-  font-weight: 700;
-} */
 
 span {
   font-weight: bold;
