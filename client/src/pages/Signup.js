@@ -35,7 +35,7 @@ function Signup(props) {
       <div className='row p-5'>
         <div className='col-md-3'></div>
         <div className='text-center col-md-6'>
-          <h2>Signup</h2>
+          <h2><span>Signup</span></h2>
           <p className=''>Create an account to save/view your favorite pieces from the gallery.</p>
           <form onSubmit={handleFormSubmit}>
             <div className="flex-row space-between my-2">

@@ -28,7 +28,7 @@ const CartItem = ({ item }) => {
         />
       </div>
       <div>
-        <div>{item.name}</div>
+        <p>{item.name}</p>
         <div>
           <FontAwesomeIcon 
             aria-label="trash"

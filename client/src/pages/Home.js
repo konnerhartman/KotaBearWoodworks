@@ -10,11 +10,12 @@ const Home = () => {
       <div className="col-lg-5 col-sm-12 p-4">
         <img src={Logo} alt="KBWW Logo" className="home-logo" />
       </div>
-      <div className="col-lg-5 col-sm-12 p-4">
+      <div className="col-lg-5 col-sm-12 p-5">
         <div className="intro">
-          <h2 className="">Welcome,</h2>
-          <p className="">To Kota Bear Woodworks.</p>
-          <p className="">Take a look at my gallery to see a few items I have built.</p>
+          <h2><span>Welcome,</span></h2>
+          <p>To Kota Bear Woodworks.</p>
+          <p className="m-0">Custom handmade goods created in DFW, Texas.</p>
+          <p className="m-0">Take a look at my gallery to see a few items I have built.</p>
         </div>
         <Link className="btn btn-secondary btn-lg" to="/gallery">
           Gallery

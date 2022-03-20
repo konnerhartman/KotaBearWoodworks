@@ -82,12 +82,14 @@ function Detail() {
     <div className='gallery'>
       {currentProduct && cart ? (
         <div>
-          <Link to="/gallery" className='backBtn p-2 text-dark'>
-            <FontAwesomeIcon icon={faAngleDoubleLeft} /> Back to Gallery
-          </Link>
+          <p>
+            <Link to="/gallery" className='backBtn p-2 text-dark'>
+              <FontAwesomeIcon icon={faAngleDoubleLeft} /> Back to Gallery
+            </Link>
+          </p>
           <div className='text-center'>
             <div>
-              <h2>{currentProduct.name}</h2>
+              <h2><span>{currentProduct.name}</span></h2>
               <p className='likeBtn'>
                 <button 
                 hidden={cart.find((p) => p._id === currentProduct._id)}
@@ -110,7 +112,7 @@ function Detail() {
               alt={currentProduct.name}
             />
             <p className='m-0'>{currentProduct.description}</p>
-            <p className='m-0 pb-4'>Available: {currentProduct.availability}</p>
+            <p className='m-0 pb-4'>Available: <span>{currentProduct.availability}</span></p>
           </div>
         </div>
       ) : null}

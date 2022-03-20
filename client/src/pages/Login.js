@@ -34,7 +34,7 @@ function Login(props) {
       <div className='row p-5'>
         <div className='col-md-3'></div>
         <div className='text-center col-md-6'>
-          <h2>Login</h2>
+          <h2><span>Login</span></h2>
           <p className=''>Login to your account to save/view your favorite pieces from the gallery.</p>
           <form className='' onSubmit={handleFormSubmit}>
             <div className="form-group">
@@ -69,7 +69,7 @@ function Login(props) {
           <p>
             Don't have an account?
             <br />
-            <Link className='' to="/signup"><b>Go to Signup</b></Link>
+            <Link to="/signup"><b>Go to Signup</b></Link>
           </p>
         </div>
         <div className='col-md-3'></div>

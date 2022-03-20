@@ -20,7 +20,7 @@ const Favorites = () => {
 
   return (
     <div className="likes bg-light text-center gallery pb-2">
-      <h2 className='p-3'>Favorites</h2>
+      <h2 className='p-3'><span>Favorites</span></h2>
       {state.cart.length ? (
         <div>
           {state.cart.map((item) => (

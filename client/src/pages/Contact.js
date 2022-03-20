@@ -23,7 +23,7 @@ const Contact = () => {
       <section className="mb-4 text-white">
         <div>
           <div className="col-md-6 p-3">
-            <h2 className="h1-responsive font-weight-bold text-center my-4">Reach Out</h2>
+            <h2 className="h1-responsive font-weight-bold text-center my-4"><span>Reach Out</span></h2>
             <p className="text-center w-responsive mx-auto">Do you have any questions about pricing? Want to discuss custom pieces? Please do not hesitate to contact me directly.</p>
             <form onSubmit={sendEmail} id="contact-form" name="contact-form" action="mail.php" method="POST">
               <div className="row mb-3">
