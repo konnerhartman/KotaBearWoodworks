@@ -110,6 +110,11 @@ span {
   height: 25vw;
 }
 
+.detail-img {
+  height: auto;
+  width: 95%;
+}
+
 .backBtn {
   text-decoration: none;
   font-weight: bold;

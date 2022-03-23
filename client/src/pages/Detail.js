@@ -108,8 +108,7 @@ function Detail() {
             <div className='row'>
               <div className='col-lg-6 col-sm-12 p-2'>
                 <img
-                  height='510rem'
-                  className='rounded shadow-lg'
+                  className='rounded shadow-lg detail-img'
                   src={`/images/${currentProduct.image}`}
                   alt={currentProduct.name}
                 />
