@@ -88,9 +88,9 @@ function Detail() {
             </Link>
           </p>
           <div className='text-center'>
-            <div>
-              <h2><span>{currentProduct.name}</span></h2>
-              <p className='likeBtn'>
+            <div className='row'>
+              <h2 className='col-lg-7 col-9 text-end'><span>{currentProduct.name}</span></h2>
+              <p className='likeBtn col-lg-5 col-3 text-start'>
                 <button 
                 hidden={cart.find((p) => p._id === currentProduct._id)}
                 onClick={addToCart}
@@ -115,8 +115,10 @@ function Detail() {
                 />
               </div>
               <div className='col-lg-6 col-sm-12'>
-                <p className='m-0 pb-4'>Available: <span>{currentProduct.availability}</span></p>
-                <p className='m-0'>Details: {currentProduct.description}</p>
+                <h4>Available:</h4>
+                <p className='m-0 pb-4'><span>{currentProduct.availability}</span></p>
+                <h4>Details:</h4>
+                <p className='m-0'>{currentProduct.description}</p>
               </div>
             </div>
           </div>
