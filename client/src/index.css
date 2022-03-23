@@ -153,6 +153,10 @@ to {
   .gallery-img {
     height: 50%;
   }
+
+  .favorite-img {
+    height: 50%;
+  }
 }
 
 /* footer {
