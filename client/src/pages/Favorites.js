@@ -19,8 +19,8 @@ const Favorites = () => {
   }, [state.cart.length, dispatch]);
 
   return (
-    <div className="likes bg-light text-center gallery pb-2">
-      <h2 className='p-3'><span>Favorites</span></h2>
+    <div className="likes bg-light text-center favorites pb-2">
+      <h2 className='p-3 text-light'><span>Favorites</span></h2>
       {state.cart.length ? (
         <div>
           {state.cart.map((item) => (
