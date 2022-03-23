@@ -7,7 +7,7 @@ import { QUERY_PRODUCTS } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
-
+import { Link } from "react-router-dom";
 
 function ProductList() {
   const [state, dispatch] = useStoreContext();
@@ -50,6 +50,12 @@ function ProductList() {
       <h2 className='p-2'><span>My Pieces</span></h2>
       {state.products.length ? (
         <div>
+          <p>
+            For any inquiries about pricing or custom pieces, please feel free to
+            <Link className='p-1 text-dark' to="/contact">
+              contact me.
+            </Link>
+          </p>
           {filterProducts().map((product) => (
             <ProductItem
               key={product._id}
