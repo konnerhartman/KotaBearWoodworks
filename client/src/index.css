@@ -41,7 +41,9 @@ span {
   background-image: url(./assets/about-bg.jpeg);
   background-size: cover;
   background-position: center;
-  height: 625px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 625px;
 }
 
 .contact {
@@ -113,6 +115,10 @@ span {
 .detail-img {
   height: auto;
   width: 95%;
+}
+
+.detail-text {
+  font-size: large;
 }
 
 .backBtn {
