@@ -37,7 +37,7 @@ function ProductItem(item) {
       <div>
         <Link to={`/products/${_id}`} className='text-decoration-none'>
           <img
-            className="card-img-top"
+            className="card-img-top gallery-img"
             alt={name}
             src={`/images/${image}`}
           />

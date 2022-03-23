@@ -83,12 +83,22 @@ span {
   font-size: 3rem;
 }
 
-.item-card {
+.card {
   width: 18rem;
+  height: 24rem;
 }
 
-.detail-card {
-background-color: white;
+.card-img-top {
+  width: 100%;
+  object-fit: scale-down;
+}
+
+.gallery-img {
+  height: 20vw;
+}
+
+.favorite-img {
+  height: 25vw;
 }
 
 .backBtn {
