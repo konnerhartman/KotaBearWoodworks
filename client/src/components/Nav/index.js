@@ -25,7 +25,7 @@ function Navi() {
     <nav className="navbar navbar-light bg-dark p-3 d-flex">
       <div className="h1">
         <Link className="text-decoration-none d-flex" to="/">
-          <img className="justify-content-center" src={Logo} alt="Kota Bear Woodworks Logo" height="125px"></img>
+          <img className="justify-content-center align-self-center" src={Logo} alt="Kota Bear Woodworks Logo" height="125px"></img>
           <h1 className="text-white pt-4 px-3 d-none d-sm-block"><span>KOTA BEAR WOODWORKS</span></h1>
         </Link>
       </div>
