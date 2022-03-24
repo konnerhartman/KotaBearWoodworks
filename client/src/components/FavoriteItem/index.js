@@ -31,7 +31,7 @@ const FavoriteItem = ({ item }) => {
       </Link>
       <div className="card-body row">
         <Link className='col-10 text-dark text-decoration-none' to={`/products/${item._id}`}>
-          <h5 className="card-title">{item.name}</h5>
+          <h5 className="p-0 m-0">{item.name}</h5>
         </Link>
         <FontAwesomeIcon 
           className='col-1 p-1'

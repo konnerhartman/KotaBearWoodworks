@@ -5,9 +5,9 @@ import Logo from "../assets/KBWW-black.png"
 const Home = () => {
   return (
     <div className="jumbotron p-5 row text-center">
-      <div className="col-lg-1 d-none d-sm-block">
+      <div className="col-1 d-none d-sm-block">
       </div>
-      <div className="col-lg-5 col-sm-12  d-none d-sm-block">
+      <div className="col-5 d-none d-sm-block">
         <img src={Logo} alt="KBWW Logo" className="home-logo" />
       </div>
       <div className="col-lg-5 col-sm-12 p-3">
@@ -21,7 +21,7 @@ const Home = () => {
           Gallery
         </Link>
       </div>
-      <div className="col-lg-1 d-none d-sm-block">
+      <div className="col-1 d-none d-sm-block">
       </div>
     </div>
   );

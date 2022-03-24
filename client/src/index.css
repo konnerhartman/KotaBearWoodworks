@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka:wght@300;400;500&family=Saira+Condensed:wght@400;700&display=swap');
 
-html,body
+html, body
 {
   width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
   overflow-x: hidden; 
+  background-color: #212529;
 }
 
 h1, h2, h3, h4, h5, p, nav, form, .btn {
@@ -16,7 +17,6 @@ h1, h2, h3, h4, h5, p, nav, form, .btn {
 span {
   font-weight: bold;
 }
-
 
 .intro {
   font-size: larger;
@@ -96,7 +96,7 @@ span {
 
 .card {
   width: 18rem;
-  height: 24rem;
+  height: 100%;
 }
 
 .card-img-top {
