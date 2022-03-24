@@ -115,9 +115,9 @@ function Detail() {
               </div>
               <div className='col-lg-6 col-sm-12'>
                 <h4>Available:</h4>
-                <p className='m-0 pb-4 detail-text'><span>{currentProduct.availability}</span></p>
+                <p className='m-0 pb-4'><span>{currentProduct.availability}</span></p>
                 <h4>Details:</h4>
-                <p className='m-0 detail-text'>{currentProduct.description}</p>
+                <p className='m-0'>{currentProduct.description}</p>
               </div>
             </div>
           </div>

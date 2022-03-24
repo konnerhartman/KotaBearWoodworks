@@ -36,59 +36,37 @@ span {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* height: 625px; */
 }
 
 .jumbotron {
   background-image: url(./assets/jumbo-bg.jpeg);
-  /* background-size: cover; */
   background-position: top;
   height: 625px;
 }
 
 .about {
   background-image: url(./assets/about-bg.jpeg);
-  /* background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; */
   min-height: 625px;
 }
 
 .contact {
   background-image: url(./assets/contact-bg.jpeg);
-  /* background-size: cover;
-  background-position: center; */
-  /* height: 625px; */
 }
 
 .login {
   background-image: url(./assets/login-bg.jpeg);
-  /* background-size: cover;
-  background-position: center; */
-  /* height: 625px; */
 }
 
 .gallery {
   background-image: url(./assets/gallery-bg.jpeg);
-  /* background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; */
 }
 
 .favorites {
   background-image: url(./assets/favorites-bg.jpeg);
-  /* background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; */
 }
 
 .noMatch {
   background-image: url(./assets/404-bg.jpeg);
-  /* background-size: cover;
-  background-position: center; */
   height: 625px;
 }
 
