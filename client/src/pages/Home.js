@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/KBWW-black.png"
+import Logo from "../assets/KBWW-black-md.png"
 
 const Home = () => {
   return (

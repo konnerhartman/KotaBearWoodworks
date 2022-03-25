@@ -2,7 +2,7 @@ import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import Logo from "../../assets/KBWW-white.png";
+import Logo from "../../assets/KBWW-white-sm.png";
 
 function Navi() {
 

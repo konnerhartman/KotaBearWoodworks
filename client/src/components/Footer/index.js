@@ -1,5 +1,5 @@
 import React from "react";
-import KHLogo from "../../assets/KH-LOGO.png"
+import KHLogo from "../../assets/KH-LOGO-sm.png"
 
 function Footer() {
 return (
